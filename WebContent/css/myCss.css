@@ -1,0 +1,29 @@
+table{
+	text-align:center;
+	border-style: solid;
+ 	border-color: #0000ff;
+	border-collapse: collapse;
+	border-top: hidden;
+	border-bottom: hidden;
+	width: 800px;
+}
+td{
+	border-style: solid;
+ 	border-color: #0000ff;
+	border-collapse: collapse;
+	margin: 10px,auto;
+}
+td,thead,tr{
+	border-style: solid;
+ 	border-color: #0000ff;
+	border-collapse: collapse;
+	padding: 10px;
+}
+#bottom,#bottom1,#bottom2,#top{
+	width: 775px;
+	padding: 10px;
+	margin: 10px,auto;
+	border-style: solid;
+ 	border-color: #0000ff;
+	border-collapse: collapse;
+} 
