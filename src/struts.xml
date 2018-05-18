@@ -1,0 +1,6 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<include file="cn/adu/ahpu/web/action/action.xml"></include>
+</struts>

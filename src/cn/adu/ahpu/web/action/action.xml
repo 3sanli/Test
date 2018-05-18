@@ -1,0 +1,38 @@
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="test2" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="LoginInterceptor" class="cn.adu.ahpu.web.interceptor.LoginInterceptor"></interceptor>
+			<interceptor-stack name="MyStack">
+				<interceptor-ref name="LoginInterceptor">
+					<param name="excludeMethods">login</param>
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>			
+		</interceptors>
+		<default-interceptor-ref name="MyStack"></default-interceptor-ref>
+		
+		
+		<global-results>
+			<result name="toLogin">/login.jsp</result>
+		</global-results>
+				
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="java.lang.RuntimeException"></exception-mapping>
+		</global-exception-mappings>
+		
+		
+	
+		<action name="UserAction_*" class="cn.adu.ahpu.web.action.UserAction" method="{1}">
+			<result name="login" type="redirect">/messageBoard.jsp</result>
+			<result name="error">/login.jsp</result>
+			<allowed-methods>login</allowed-methods>
+		</action>
+		<action name="MessageAction_*" class="cn.adu.ahpu.web.action.MessageAction" method="{1}">
+			<result name="showMessage" type="redirect">/showMessage.jsp</result>
+			<allowed-methods>createMessage</allowed-methods>
+		</action>
+	</package>
+</struts>
