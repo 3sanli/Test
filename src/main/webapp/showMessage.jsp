@@ -15,10 +15,10 @@
 
 </head>
 <body>
-	<table style="border: thin;">
-		<thead style="background-color: blue;">留言列表
-		</thead>
-		<tr style="font-style: normal;">
+	<table border="1">
+		<thead>留言列表</thead>
+		
+		<tr>
 			<td>留言人</td>
 			<td>标题</td>
 			<td>内容</td>

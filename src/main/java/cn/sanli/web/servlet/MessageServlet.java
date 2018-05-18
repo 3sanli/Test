@@ -38,7 +38,7 @@ public class MessageServlet extends HttpServlet {
 		String title = request.getParameter("title");
 		String content = request.getParameter("content");
 		HttpSession session = request.getSession();
-		String username = (String)session.getAttribute("username");
+		String username = (String)session.getAttribute("user");
 		
 		ServletContext application = session.getServletContext();
 		

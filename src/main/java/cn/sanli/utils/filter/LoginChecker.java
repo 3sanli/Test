@@ -20,22 +20,23 @@ public class LoginChecker implements Filter {
 		
 		String user = (String) req.getSession().getAttribute("user");
 		
-		if((req.getContextPath()+"/login.jsp").equals(req.getRequestURL())) {
+		if(req.getRequestURI().equals(req.getContextPath()+"/login.jsp") || req.getRequestURI().equals(req.getContextPath()+"/LoginServlet")) {
 			chain.doFilter(req, res);
 		}
 		
-		if(user!=null) {
+		else if(user!=null) {
 			chain.doFilter(req, res);
 		}
 		else {
 			res.sendRedirect(req.getContextPath()+"/login.jsp");
 		}
 		
-		
 	}
 
 	
 	public void init(FilterConfig fConfig) throws ServletException {
+		
+		
 	}
 
 	@Override
