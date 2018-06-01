@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [27/May/2018:10:06:52 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 145
+0:0:0:0:0:0:0:1 - - [27/May/2018:10:06:52 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [27/May/2018:10:06:56 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-4 4
+0:0:0:0:0:0:0:1 - - [27/May/2018:10:07:43 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 324
+0:0:0:0:0:0:0:1 - - [27/May/2018:10:21:01 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 139
+0:0:0:0:0:0:0:1 - - [27/May/2018:10:21:04 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-2 5

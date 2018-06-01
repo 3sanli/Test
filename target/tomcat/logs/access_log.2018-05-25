@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:01:57 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 585 http-bio-8080-exec-1 1150
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:01:57 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:02:30 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-3 78
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:03:21 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-4 5
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:19:07 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 100
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:19:15 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 3480 http-bio-8080-exec-2 11
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:23:00 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 111
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:23:04 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:24:37 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 90
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:24:42 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 4110 http-bio-8080-exec-2 9
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:30:33 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 86
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:30:40 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-2 6
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:37:01 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 97
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:37:06 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-2 7
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:47:19 +0800] "GET /Test6/user.jsp HTTP/1.1" 200 603 http-bio-8080-exec-1 383
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:53:25 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-2 30
+0:0:0:0:0:0:0:1 - - [25/May/2018:16:53:34 +0800] "GET /Test6/UserServlet?method=add HTTP/1.1" 500 1487 http-bio-8080-exec-1 3

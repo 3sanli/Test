@@ -1,0 +1,36 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sanli.mapper.UserMapper">
+	<!-- //添加用户
+	void addUser(User u);
+	//根据用户名查询用户
+	User getByUsername(String username);
+	//根据user对象修改用户只允许修改用户口令
+	void modifyUser(User u);
+	//根据user对象删除用户
+	void deleteUser(User u); -->
+	<!-- //添加用户 -->
+	<insert id="addUser" parameterType="User">
+		insert into user values(#{username},#{password})
+	</insert>
+	
+	<select id="getByUsername" parameterType="String" resultType="User">
+		select * from user where username=#{username}
+	</select>
+	
+	<update id="modifyUser" parameterType="User">
+		update user set password=#{password} where username=#{username}
+	</update>
+	
+	<delete id="deleteUser" parameterType="String">
+		delete from user where username=#{username};
+	</delete>
+	
+	<!-- //查询所有用户
+	List<User> getAll(); -->
+	
+	<select id="getAll" resultType="User">
+		select * from user
+	</select>
+</mapper>   
